@@ -1,0 +1,70 @@
+import { Link } from 'react-router-dom'
+
+export function MissionTypes() {
+  return (
+    <>
+      <section className="page-header">
+        <h1>Mission Types</h1>
+      </section>
+      <section className="page-content">
+        <p>Every mission is designed to channel your dog’s energy into structured tasks that promote physical and mental wellbeing.</p>
+        <div className="mission-grid">
+          <div className="mission-card">
+            <h3>High‑Drive Ops</h3>
+            <ul>
+              <li>Obstacle courses and agility challenges.</li>
+              <li>Deep‑water decompression swims and pool drills.</li>
+              <li>Backpack runs and off‑trail exploration.</li>
+              <li>Advanced scent work and problem‑solving exercises.</li>
+            </ul>
+          </div>
+          <div className="mission-card">
+            <h3>Hunt &amp; Track</h3>
+            <ul>
+              <li>Scent puzzles and tracking missions through varied terrain.</li>
+              <li>Search‑and‑find games to tap into natural instincts.</li>
+              <li>Wildlife trail following and trailing exercises.</li>
+              <li>Confidence‑building hunts that challenge the mind.</li>
+            </ul>
+          </div>
+          <div className="mission-card">
+            <h3>Recon Walks</h3>
+            <ul>
+              <li>Purposeful urban outings focusing on focus and calm.</li>
+              <li>Exposure to new sights, sounds, and smells.</li>
+              <li>Engagement games amid distractions.</li>
+              <li>Structured leash work to build leadership.</li>
+            </ul>
+          </div>
+          <div className="mission-card">
+            <h3>Gentle Patrols</h3>
+            <ul>
+              <li>Low‑impact hikes and sniff‑and‑stroll adventures.</li>
+              <li>Sensory enrichment for seniors and low‑drive dogs.</li>
+              <li>Calm decompression in wooded and waterfront environments.</li>
+              <li>Building confidence without over‑arousal.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>Rescue &amp; Adoption Programs</h2>
+        <ul>
+          <li><strong>New Pack Mission:</strong> Ten missions included for dogs adopted from local rescues. Decompression and training to ease the transition into a new home.</li>
+          <li><strong>Foster Support:</strong> One complimentary mission per week for foster dogs while they await adoption.</li>
+          <li><strong>Guardians Missions:</strong> Specialized missions for long‑term fosters or reactive dogs needing behavioral support and decompression.</li>
+          <li><strong>Custom Behavior Plans:</strong> Private, home‑away‑from‑home training for dogs needing focused behavior modification.</li>
+        </ul>
+
+        <h2>Facility &amp; Service Area</h2>
+        <ul>
+          <li>We operate on a 100‑acre facility featuring a 10‑acre mission/training park, 20 acres of farmland, and 25 acres of wooded trails.</li>
+          <li>GPS tracking ensures your dog’s safety and allows you to follow along on every mission.</li>
+          <li>We serve Jacksonville, Ponte Vedra, St.&nbsp;Johns, and surrounding areas.</li>
+        </ul>
+
+        <p>Ready to choose your mission? <Link to="/contact">Contact us</Link> to schedule your assessment and design a plan for your dog.</p>
+      </section>
+    </>
+  )
+}
+
