@@ -1,0 +1,41 @@
+<!-- Contact Button -->
+<button id="contactBtn">Contact</button>
+
+<!-- Popup Modal/Overlay -->
+<div id="contactModal" style="display:none;">
+  <div id="modalContent">
+    <span id="closeModal">&times;</span>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <label for="name">Name:</label>
+      <input type="text" name="name" required />
+      <label for="email">Email:</label>
+      <input type="email" name="email" required />
+      <label for="message">Message:</label>
+      <textarea name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+<style>
+#contactModal {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center;
+}
+#modalContent {
+  background: #fff; padding: 2em; border-radius: 8px; position: relative;
+}
+#closeModal {
+  position: absolute; top: 0.5em; right: 1em; cursor: pointer; font-size: 1.5em;
+}
+</style>
+
+<script>
+const btn = document.getElementById('contactBtn');
+const modal = document.getElementById('contactModal');
+const close = document.getElementById('closeModal');
+btn.onclick = () => modal.style.display = 'flex';
+close.onclick = () => modal.style.display = 'none';
+window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; };
+</script>
